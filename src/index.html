@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link href="./output.css" rel="stylesheet">
+    <link rel="icon" href="https://img.icons8.com/color/48/light.png">
+    <title>Todo-list || code with sinikdho</title>
+</head>
+<body class="bg-[#172434] min-h-screen flex flex-col items-center p-6">
+   
+ <h1 class="text-3xl text-center font-bold mt-7 mb-8 text-[#00b7ff]">To-do List App</h1>
+   <!-- Filter button  -->
+    <div class="space-x-4 md-4">
+     <button class="px-4 py-2  text-white rounded" id="All"> All </button>
+     <button class="px-4 py-2 text-white rounded" id="InComplete"> InComplete</button>
+     <button class="px-4 py-2  text-white rounded" id="Completed"> Completed </button>
+    </div>
+    <!-- Filter button  -->
+
+    <!-- Add Todo Form -->
+  <form id="todo-form" class="mb-6 flex justify-center mt-7 gap-2 w-full max-w-md ">
+   <input type="text" placeholder="Add New Todo " id="todo-input" class="border-2 border-blue-500 rounded text-white p-2 focus:outline-none mt-4">
+    <button type="submit" class="bg-blue-500 text-white w-[100px] h-[50px] mt-4 rounded hover:bg-blue-800">Add</button>
+</form>
+<!-- Add Todo Form -->
+<!--Todo List-->
+	<ul id="todo-list" class="w-full max-w-md mx-auto space-y-2 text-white text-lg"></ul>
+
+
+<!--Todo List-->
+
+<script src="../js/app.js"></script>
+</body>
+</html>
